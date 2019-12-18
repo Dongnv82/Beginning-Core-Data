@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55B8504623AA0F1A00F76772 /* CollegeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8504523AA0F1A00F76772 /* CollegeDetailViewController.swift */; };
+		55B8504923AA2F6E00F76772 /* College.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B8504723AA2F6E00F76772 /* College.storyboard */; };
 		55DB36EE23A093710002395C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB36ED23A093710002395C /* AppDelegate.swift */; };
-		55DB36F023A093710002395C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB36EF23A093710002395C /* ViewController.swift */; };
+		55DB36F023A093710002395C /* CollegeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB36EF23A093710002395C /* CollegeListViewController.swift */; };
 		55DB36F323A093710002395C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55DB36F123A093710002395C /* Main.storyboard */; };
 		55DB36F623A093710002395C /* Student_Management.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55DB36F423A093710002395C /* Student_Management.xcdatamodeld */; };
 		55DB36F823A093740002395C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DB36F723A093740002395C /* Assets.xcassets */; };
 		55DB36FB23A093740002395C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55DB36F923A093740002395C /* LaunchScreen.storyboard */; };
 		55DB370623A093750002395C /* Student_ManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB370523A093750002395C /* Student_ManagementTests.swift */; };
 		55DB371123A093750002395C /* Student_ManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB371023A093750002395C /* Student_ManagementUITests.swift */; };
+		55DB372023A0CB760002395C /* CollegeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB371F23A0CB760002395C /* CollegeFormViewController.swift */; };
+		55DB372323A0D0290002395C /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB372223A0D0290002395C /* DatabaseHelper.swift */; };
+		55DB372623A0DC110002395C /* CollegeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB372523A0DC110002395C /* CollegeViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55B8504523AA0F1A00F76772 /* CollegeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeDetailViewController.swift; sourceTree = "<group>"; };
+		55B8504823AA2F6E00F76772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Student Management/Base.lproj/College.storyboard"; sourceTree = "<group>"; };
 		55DB36EA23A093710002395C /* Student Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DB36ED23A093710002395C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55DB36EF23A093710002395C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55DB36EF23A093710002395C /* CollegeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeListViewController.swift; sourceTree = "<group>"; };
 		55DB36F223A093710002395C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55DB36F523A093710002395C /* Student_Management.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Student_Management.xcdatamodel; sourceTree = "<group>"; };
 		55DB36F723A093740002395C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		55DB370C23A093750002395C /* Student ManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student ManagementUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DB371023A093750002395C /* Student_ManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_ManagementUITests.swift; sourceTree = "<group>"; };
 		55DB371223A093750002395C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55DB371F23A0CB760002395C /* CollegeFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeFormViewController.swift; sourceTree = "<group>"; };
+		55DB372223A0D0290002395C /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		55DB372523A0DC110002395C /* CollegeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55B8504A23AA2F9C00F76772 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				55B8504723AA2F6E00F76772 /* College.storyboard */,
+				55DB36F123A093710002395C /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		55DB36E123A093710002395C = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +118,11 @@
 		55DB36EC23A093710002395C /* Student Management */ = {
 			isa = PBXGroup;
 			children = (
+				55DB372423A0DBD10002395C /* View */,
+				55DB372123A0CFDA0002395C /* DatabaseHelper */,
+				55DB371E23A0CB530002395C /* Controller */,
 				55DB36ED23A093710002395C /* AppDelegate.swift */,
-				55DB36EF23A093710002395C /* ViewController.swift */,
-				55DB36F123A093710002395C /* Main.storyboard */,
+				55B8504A23AA2F9C00F76772 /* Storyboard */,
 				55DB36F723A093740002395C /* Assets.xcassets */,
 				55DB36F923A093740002395C /* LaunchScreen.storyboard */,
 				55DB36FC23A093740002395C /* Info.plist */,
@@ -126,6 +147,32 @@
 				55DB371223A093750002395C /* Info.plist */,
 			);
 			path = "Student ManagementUITests";
+			sourceTree = "<group>";
+		};
+		55DB371E23A0CB530002395C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55DB36EF23A093710002395C /* CollegeListViewController.swift */,
+				55DB371F23A0CB760002395C /* CollegeFormViewController.swift */,
+				55B8504523AA0F1A00F76772 /* CollegeDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55DB372123A0CFDA0002395C /* DatabaseHelper */ = {
+			isa = PBXGroup;
+			children = (
+				55DB372223A0D0290002395C /* DatabaseHelper.swift */,
+			);
+			path = DatabaseHelper;
+			sourceTree = "<group>";
+		};
+		55DB372423A0DBD10002395C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55DB372523A0DC110002395C /* CollegeViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B8504923AA2F6E00F76772 /* College.storyboard in Resources */,
 				55DB36FB23A093740002395C /* LaunchScreen.storyboard in Resources */,
 				55DB36F823A093740002395C /* Assets.xcassets in Resources */,
 				55DB36F323A093710002395C /* Main.storyboard in Resources */,
@@ -259,8 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B8504623AA0F1A00F76772 /* CollegeDetailViewController.swift in Sources */,
+				55DB372023A0CB760002395C /* CollegeFormViewController.swift in Sources */,
+				55DB372323A0D0290002395C /* DatabaseHelper.swift in Sources */,
+				55DB372623A0DC110002395C /* CollegeViewCell.swift in Sources */,
 				55DB36F623A093710002395C /* Student_Management.xcdatamodeld in Sources */,
-				55DB36F023A093710002395C /* ViewController.swift in Sources */,
+				55DB36F023A093710002395C /* CollegeListViewController.swift in Sources */,
 				55DB36EE23A093710002395C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +349,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		55B8504723AA2F6E00F76772 /* College.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55B8504823AA2F6E00F76772 /* Base */,
+			);
+			name = College.storyboard;
+			sourceTree = "<group>";
+		};
 		55DB36F123A093710002395C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
