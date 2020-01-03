@@ -42,6 +42,10 @@ class CollegeDetailViewController: UIViewController {
     }
     
     @IBAction func clickMoreInfo(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ScoreViewController") as! ScoreViewController
+        vc.college = collegeDetail
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

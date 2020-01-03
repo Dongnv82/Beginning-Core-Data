@@ -6,8 +6,18 @@
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="score" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Score" inverseName="college" inverseEntity="Score" syncable="YES"/>
+    </entity>
+    <entity name="Score" representedClassName="Score" syncable="YES" codeGenerationType="class">
+        <attribute name="anh" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hoa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ly" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toan" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="van" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="college" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="College" inverseName="score" inverseEntity="College" syncable="YES"/>
     </entity>
     <elements>
-        <element name="College" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="College" positionX="-371.515625" positionY="-68.84375" width="128" height="135"/>
+        <element name="Score" positionX="-63" positionY="18" width="128" height="135"/>
     </elements>
 </model>

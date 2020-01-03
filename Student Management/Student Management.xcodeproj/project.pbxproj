@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55A2A08023BF418800B099BF /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2A07F23BF418800B099BF /* ScoreViewController.swift */; };
+		55A2A08223BF41A100B099BF /* ScoreFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2A08123BF41A100B099BF /* ScoreFormViewController.swift */; };
+		55A2A08423BF41B500B099BF /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2A08323BF41B500B099BF /* ScoreTableViewCell.swift */; };
 		55B8504623AA0F1A00F76772 /* CollegeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8504523AA0F1A00F76772 /* CollegeDetailViewController.swift */; };
 		55B8504923AA2F6E00F76772 /* College.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B8504723AA2F6E00F76772 /* College.storyboard */; };
 		55DB36EE23A093710002395C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB36ED23A093710002395C /* AppDelegate.swift */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55A2A07F23BF418800B099BF /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		55A2A08123BF41A100B099BF /* ScoreFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreFormViewController.swift; sourceTree = "<group>"; };
+		55A2A08323BF41B500B099BF /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
 		55B8504523AA0F1A00F76772 /* CollegeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeDetailViewController.swift; sourceTree = "<group>"; };
 		55B8504823AA2F6E00F76772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Student Management/Base.lproj/College.storyboard"; sourceTree = "<group>"; };
 		55DB36EA23A093710002395C /* Student Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +161,8 @@
 				55DB36EF23A093710002395C /* CollegeListViewController.swift */,
 				55DB371F23A0CB760002395C /* CollegeFormViewController.swift */,
 				55B8504523AA0F1A00F76772 /* CollegeDetailViewController.swift */,
+				55A2A07F23BF418800B099BF /* ScoreViewController.swift */,
+				55A2A08123BF41A100B099BF /* ScoreFormViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				55DB372523A0DC110002395C /* CollegeViewCell.swift */,
+				55A2A08323BF41B500B099BF /* ScoreTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,13 +316,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A2A08423BF41B500B099BF /* ScoreTableViewCell.swift in Sources */,
 				55B8504623AA0F1A00F76772 /* CollegeDetailViewController.swift in Sources */,
 				55DB372023A0CB760002395C /* CollegeFormViewController.swift in Sources */,
 				55DB372323A0D0290002395C /* DatabaseHelper.swift in Sources */,
 				55DB372623A0DC110002395C /* CollegeViewCell.swift in Sources */,
+				55A2A08223BF41A100B099BF /* ScoreFormViewController.swift in Sources */,
 				55DB36F623A093710002395C /* Student_Management.xcdatamodeld in Sources */,
 				55DB36F023A093710002395C /* CollegeListViewController.swift in Sources */,
 				55DB36EE23A093710002395C /* AppDelegate.swift in Sources */,
+				55A2A08023BF418800B099BF /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

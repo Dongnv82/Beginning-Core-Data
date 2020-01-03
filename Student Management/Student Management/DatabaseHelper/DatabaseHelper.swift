@@ -14,7 +14,7 @@ class DatabaseHelper: NSObject {
     static let shareInstance = DatabaseHelper()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    //Mark: -Method
+    //Mark: -Method College
     func saveColegeData(collegeDict: [String:String]) {
         
         let college = NSEntityDescription.insertNewObject(forEntityName: "College", into: context) as! College
@@ -70,6 +70,49 @@ class DatabaseHelper: NSObject {
         }catch let err {
             print("College update error :- \(err.localizedDescription)")
         }
+    }
+    
+    //Mark: -Method Score
+    func saveScoreData(scoreDict: [String:String], college: College) {
+        
+        let score = NSEntityDescription.insertNewObject(forEntityName: "Score", into: context) as! Score
+        score.toan = scoreDict["toan"]
+        score.ly = scoreDict["ly"]
+        score.hoa = scoreDict["hoa"]
+        score.anh = scoreDict["anh"]
+        score.van = scoreDict["van"]
+        score.college = college
+        do {
+            try context.save()
+        }catch let err {
+            print("Score save error :- \(err.localizedDescription)")
+        }
+        
+    }
+    
+    func getAllScoreData() -> [Score] {
+        var arrScore = [Score]()
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Score")
+        
+        do {
+            arrScore = try context.fetch(fetchRequest) as! [Score]
+        }catch let err {
+            print("Error in score fetch :- \(err.localizedDescription)")
+        }
+        
+        return arrScore
+    }
+    
+    func deleteScoreData(index: Int) -> [Score] {
+        var arrScore = self.getAllScoreData() //get data
+        context.delete(arrScore[index])  // remove form coredata
+        arrScore.remove(at: index)    // remove in array
+        do {
+            try context.save()
+        } catch let err {
+            print("delete score data :- \(err.localizedDescription)")
+        }
+        return arrScore
     }
 
 }
